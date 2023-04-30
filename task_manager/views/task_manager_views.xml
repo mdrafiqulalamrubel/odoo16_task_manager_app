@@ -35,9 +35,9 @@
                     <templates>
                         <t t-name="kanban-box">
                             <div t-attf-class="oe_kanban_card oe_kanban_content oe_kanban_global_click">
-                                <div class="o_kanban_image">
-                                    <img t-att-src="kanban_image('task.manager', 'photo', record.id.raw_value)"/>
-                                </div>
+                                <!-- <div class="o_kanban_image">
+                                    <img t-att-src="kanban_image('res_users', 'photo', record.id.raw_value)"/>
+                                </div> -->
                                 <div class="oe_kanban_details">
                                     <strong class="o_kanban_record_title">
                                         <field name="name"/>
@@ -47,6 +47,9 @@
                                         <li><field name="deadline_date"/></li>
                                         <li><field name="assigned_to_id"/></li>
                                     </ul>
+                                    <strong class="o_kanban_record_title">   
+                                        <li><field name="status"/></li>
+                                    </strong>
                                 </div>
                             </div>
                         </t>
@@ -67,6 +70,7 @@
                     <field name="department"/>
                     <field name="deadline_date"/>
                     <field name="assigned_to_id"/>
+                    <field name="status"/>
                 </tree>
             </field>
         </record>    
@@ -86,6 +90,7 @@
                             <field name="designation"/>    
                             <field name="deadline_date"/>
                             <field name="assigned_to_id"/>
+                            <field name="status"/>
                         </group>
                     </sheet>
                 </form>

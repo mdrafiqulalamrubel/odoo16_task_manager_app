@@ -25,7 +25,6 @@ Something about the App.
     ],
     'qweb': [],
     'assets': {},
-    'icon': 'static/description/icon.png',
     'installable': True,
     'auto_install': False,
     'application': True,
